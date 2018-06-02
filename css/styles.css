@@ -1,0 +1,127 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: #000000;
+}
+/* Width and height aren't affected by padding or borders */
+* {
+  box-sizing: border-box; /* include padding and border is size calcs */
+}
+/* The Container Class */
+.container {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Style the header */
+header {
+  background: linear-gradient(
+    #3e1305,
+    #383a48
+  ); /* the default linear gradient background */
+  color: white;
+  padding-top: 1px;
+}
+@media (min-width: 768px) {
+  header {
+    background-image: url(../images/galaxy.jpg);
+    background-size: cover; /* The background image covers the entire header element */
+    background-position: right bottom;
+    padding-top: 100px;
+    color: white;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+}
+header h1 {
+  font-weight: 300;
+  font-size: 300%;
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 500%;
+  }
+}
+header .tagline {
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header .tagline {
+    font-size: 150%;
+    max-width: 50%;
+  }
+}
+/* Style the Features Section */
+ul {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  color: white;
+  background-color: #000000;
+}
+li {
+  display: flex;
+}
+svg {
+  height: 64px;
+  width: 64px;
+  fill: #8a2811;
+}
+.feature-icon {
+  padding: 1rem;
+}
+.feature-descr {
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 992px) {
+  li {
+    flex-basis: 33%;
+  }
+}
+#descriptions img {
+  float: right;
+  max-width: 400px;
+  max-height: 400px;
+}
+h2 {
+  color: #57ff8d;
+}
+footer {
+  background-color: #3e1305;
+  padding: 1rem;
+  color: white;
+}
+footer p {
+  text-decoration: none;
+}
