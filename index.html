@@ -14,18 +14,21 @@
     <header>
         <div class="container">
             <h1>Planet Facts</h1>
-            <p class="tagline">The Milky Way Galaxy is our home galaxy in the universe. It is a fairly typical barred spiral with four major
-                arms in its disk, at least one spur, and a newly discovered outer arm.</p>
+            <p class="tagline">There are 8 planets in our solar system, they are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune.
+                With the exception of Neptune and Uranus the other 6 planets can be seen unaided and all 8 are visible with
+                a small telescope or binoculars.</p>
         </div>
     </header>
 
     <main>
-        <div class="container">
+        <div class="container features">
             <ul class="features">
                 <li>
                     <div>
-                        <p>
-                            <img src="images/mercury.png" alt="mercury">
+                        <p class="zoom">
+                            <a href="#descr-mercury">
+                                <img src="images/mercury.png" alt="mercury">
+                            </a>
                         </p>
                     </div>
                     <div class="feature-descr">
@@ -38,7 +41,9 @@
                 <li>
                     <div class="feature-icon">
                         <p>
-                            <img src="images/venus.png" alt="venus">
+                            <a href="#descr-venus">
+                                <img src="images/venus.png" alt="venus">
+                            </a>
                         </p>
                     </div>
                     <div class="feature-descr">
@@ -50,7 +55,9 @@
                 <li>
                     <div class="feature-icon">
                         <p>
-                            <img src="images/earth.png" alt="earth">
+                            <a href="#descr-earth">
+                                <img src="images/earth.png" alt="earth">
+                            </a>
                         </p>
                     </div>
                     <div class="feature-descr">
@@ -61,7 +68,9 @@
                 <li>
                     <div class="feature-icon">
                         <p>
-                            <img src="images/mars.jpg" alt="mars">
+                            <a href="#descr-mars">
+                                <img src="images/mars.jpg" alt="mars">
+                            </a>
                         </p>
                     </div>
                     <div class="feature-descr">
@@ -72,7 +81,9 @@
                 <li>
                     <div class="feature-icon">
                         <p>
-                            <img src="images/jupiter.png" alt="Coffee cup on table">
+                            <a href="#descr-jupiter">
+                                <img src="images/jupiter.png" alt="Coffee cup on table">
+                            </a>
                         </p>
                     </div>
                     <div class="feature-descr">
@@ -84,7 +95,9 @@
                 <li>
                     <div class="feature-icon">
                         <p>
-                            <img src="images/saturn.png" alt="Coffee cup on table">
+                            <a href="#descr-saturn">
+                                <img src="images/saturn.png" alt="Coffee cup on table">
+                            </a>
                         </p>
                     </div>
                     <div class="feature-descr">
@@ -96,8 +109,8 @@
             </ul>
         </div>
 
-        <div class="container">
-            <div id="descriptions">
+        <div class="container descr">
+            <div id="descr-mercury" class="right">
                 <h2>Facts about Mercury</h2>
                 <h3>QUICK MERCURY FACTS</h3>
                 <img class="wp-image-638" title="Mercury" src="https://space-facts.com/wp-content/uploads/mercury.png" alt="Mercury" width="700"
@@ -130,7 +143,7 @@
                 </p>
             </div>
 
-            <div id="descriptions">
+            <div id="descr-venus" class="left">
                 <h2>Facts About Venus</h2>
                 <h3>QUICK VENUS FACTS</h3>
                 <img class="size-full wp-image-649 aligncenter" title="Venus" src="https://space-facts.com/wp-content/uploads/venus.png"
@@ -156,13 +169,12 @@
                 </p>
                 <p>Only the Moon is brighter. With a magnitude of between -3.8 to -4.6 Venus is so bright it can be seen during
                     daytime on a clear day.</p>
-                <p>While its size and mass are similar to Earth, the small asteroids are crushed when entering its atmosphere,
-                    meaning no small craters lie on the surface of the planet. The pressure felt by a human on the surface
-                    would be equivalent to that experienced deep beneath the sea on Earth.
+                <p>The Earth and Venus are very similar in size with only a 638 km difference in diameter, Venus having 81.5%
+                    of the Earth’s mass. Both also have a central core, a molten mantle and a crust.
                 </p>
             </div>
 
-            <div id="descriptions">
+            <div id="descr-earth" class="right">
                 <h2>Facts About Earth</h2>
                 <h3>QUICK EARTH FACTS</h3>
                 <img class="size-full wp-image-633 aligncenter" title="The Earth" src="https://space-facts.com/wp-content/uploads/earth.png"
@@ -194,7 +206,7 @@
                 </p>
             </div>
 
-            <div id="descriptions">
+            <div id="descr-mars" class="left">
                 <h2>Facts About Mars</h2>
                 <h3>QUICK MARS FACTS</h3>
                 <img class="wp-image-1086 size-full" title="Mars" src="https://space-facts.com/wp-content/uploads/mars.jpg" alt="Mars" width="626"
@@ -226,7 +238,7 @@
                 </p>
             </div>
 
-            <div id="descriptions">
+            <div id="descr-jupiter" class="right">
                 <h2>Facts About Jupiter</h2>
                 <h3>QUICK JUPITER FACTS</h3>
                 <img class="aligncenter size-full wp-image-1546" title="Jupiter" src="https://space-facts.com/wp-content/uploads/jupiter.png"
@@ -255,7 +267,7 @@
                 </p>
             </div>
 
-            <div id="descriptions">
+            <div id="descr-saturn" class="left">
                 <h2>Facts About Saturn</h2>
                 <h3>QUICK SATURN FACTS</h3>
                 <img class="aligncenter wp-image-643 size-full" title="saturn" src="https://space-facts.com/wp-content/uploads/saturn.png"
@@ -291,13 +303,15 @@
 
     <footer>
         <div class="container">
-            <p>Icons by
-                <a href="https://www.flaticon.com/authors/taras-shypka">Taras Shypka</a> from
-                <a href="https://www.flaticon.com/packs/drawing-tools">flaticon.com</a> licenced by
-                <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0 BY</a>.
+            <p>Images and contents by PLANET FACTS from
+                <a href="https://space-facts.com/">space-facts.com</a>
             </p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment-with-locales.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -12,6 +12,7 @@ html {
   padding-left: 0.5em;
   padding-right: 0.5em;
   max-width: 1170px;
+  margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -43,7 +44,8 @@ header {
 @media (min-width: 768px) {
   header {
     background-image: url(../images/galaxy.jpg);
-    background-size: cover; /* The background image covers the entire header element */
+    background-size: cover;
+    /* The background image covers the entire header element */
     background-position: right bottom;
     padding-top: 100px;
     color: white;
@@ -74,23 +76,18 @@ header .tagline {
   }
 }
 /* Style the Features Section */
-ul {
+.features ul {
   margin: 10px;
   padding: 10px;
   list-style: none;
   color: white;
   background-color: #000000;
 }
-li {
+.features li {
   display: flex;
 }
-svg {
-  height: 64px;
-  width: 64px;
-  fill: #8a2811;
-}
 .feature-icon {
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .feature-descr {
   flex-grow: 1;
@@ -109,7 +106,18 @@ svg {
     flex-basis: 33%;
   }
 }
-#descriptions img {
+.features img {
+  transition: transform 0.5s;
+}
+.features img:hover {
+  transform: scale(1.15);
+}
+.left img {
+  float: left;
+  max-width: 400px;
+  max-height: 400px;
+}
+.right img {
   float: right;
   max-width: 400px;
   max-height: 400px;
@@ -117,11 +125,12 @@ svg {
 h2 {
   color: #57ff8d;
 }
+.descr h2 {
+  margin-top: 1.5em;
+}
 footer {
-  background-color: #3e1305;
   padding: 1rem;
   color: white;
-}
-footer p {
   text-decoration: none;
+  font-size: 0.8em;
 }
