@@ -8,6 +8,9 @@ html {
   box-sizing: border-box; /* include padding and border is size calcs */
 }
 /* The Container Class */
+header .container {
+  padding-left: 2em;
+}
 .container {
   padding-left: 0.5em;
   padding-right: 0.5em;
